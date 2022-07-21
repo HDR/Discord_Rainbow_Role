@@ -14,7 +14,7 @@ client.on('ready', msg => {
 
 function nextColor() {
     const role = client.guilds.cache.get(guild_id).roles.cache.get(role_id)
-    if(i === color_array.length || i < color_array.length){
+    if(i < color_array.length){
         role.setColor(color_array[i]).then(console.log);
         i++;
     } else {
