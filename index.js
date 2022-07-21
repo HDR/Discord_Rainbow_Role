@@ -17,6 +17,9 @@ function nextColor() {
     if(i === color_array.length || i < color_array.length){
         role.setColor(color_array[i]).then(console.log);
         i++;
+    } else {
+        i = 0;
+        nextColor();
     }
 }
 
